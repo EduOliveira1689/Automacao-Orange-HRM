@@ -22,11 +22,11 @@ class LoginPage {
     cy.get(this.selectorsList().loginButton).click();
   }
 
-  ValidateValidAccess() {
+  validateValidAccess() {
     cy.get(this.selectorsList().dashboardGrid).should("be.visible");
   }
 
-  ValidateInvalidAccess() {
+  validateInvalidAccess() {
     cy.get(this.selectorsList().wrongCredentialAlert).should(
       "contain",
       "Invalid credentials",

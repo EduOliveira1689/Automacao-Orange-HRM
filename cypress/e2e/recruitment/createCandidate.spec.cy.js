@@ -12,7 +12,7 @@ describe("Orange HRM Tests", () => {
       loginData.userSuccess.username,
       loginData.userSuccess.password,
     );
-    loginPage.ValidateValidAccess();
+    loginPage.validateValidAccess();
     recruitmentPage.createNewCandidate();
     recruitmentPage.validateCandidateCreated();
   });

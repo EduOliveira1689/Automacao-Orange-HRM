@@ -10,7 +10,7 @@ describe("Orange HRM Tests", () => {
       loginData.userSuccess.username,
       loginData.userSuccess.password,
     );
-    loginPage.ValidateValidAccess();
+    loginPage.validateValidAccess();
   });
 
   it("Login com credenciais invalidas", () => {
@@ -19,6 +19,6 @@ describe("Orange HRM Tests", () => {
       loginData.userFail.username,
       loginData.userFail.password,
     );
-    loginPage.ValidateInvalidAccess();
+    loginPage.validateInvalidAccess();
   });
 });
