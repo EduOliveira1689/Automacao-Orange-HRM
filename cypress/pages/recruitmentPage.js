@@ -21,26 +21,14 @@ class RecruitmentPage {
   }
 
   createNewCandidate() {
-    // =========================
-    // Dados Faker
-    // =========================
-
     const firstName = faker.person.firstName();
     const middleName = faker.person.middleName();
     const lastName = faker.person.lastName();
-
-    // =========================
-    // Dados JSON
-    // =========================
 
     const randomCandidate =
       candidateData.candidates[
         Math.floor(Math.random() * candidateData.candidates.length)
       ];
-
-    // =========================
-    // Data aleatória
-    // =========================
 
     const randomDay = String(Math.floor(Math.random() * 28) + 1).padStart(
       2,
@@ -56,17 +44,9 @@ class RecruitmentPage {
 
     const applicationDate = `${randomYear}-${randomDay}-${randomMonth}`;
 
-    // =========================
-    // Fluxo Recruitment
-    // =========================
-
     cy.get(this.selectorsList().recruitmentButton).click();
 
     cy.contains("button", "Add").click();
-
-    // =========================
-    // Nome
-    // =========================
 
     cy.get(this.selectorsList().firstName).should("be.visible").type(firstName);
 
@@ -76,10 +56,6 @@ class RecruitmentPage {
 
     cy.get(this.selectorsList().lastName).should("be.visible").type(lastName);
 
-    // =========================
-    // Vacancy aleatória
-    // =========================
-
     cy.get(this.selectorsList().vacancy).click();
 
     cy.get(".oxd-select-option").then((options) => {
@@ -88,20 +64,12 @@ class RecruitmentPage {
       cy.wrap(options[randomIndex]).click();
     });
 
-    // =========================
-    // Email
-    // =========================
-
     cy.get(this.selectorsList().emailField)
       .eq(0)
       .should("be.visible")
       .and("not.be.disabled")
       .type(randomCandidate.email)
       .should("have.value", randomCandidate.email);
-
-    // =========================
-    // Contact Number
-    // =========================
 
     cy.get(this.selectorsList().contactNumberField)
       .eq(1)
@@ -110,19 +78,11 @@ class RecruitmentPage {
       .type(randomCandidate.contactNumber)
       .should("have.value", randomCandidate.contactNumber);
 
-    // =========================
-    // Application Date
-    // =========================
-
     cy.get(this.selectorsList().applicationDateField)
       .clear()
       .type(applicationDate);
 
     cy.get(this.selectorsList().checkBoxIcon).click();
-
-    // =========================
-    // Save
-    // =========================
 
     cy.get(this.selectorsList().saveButton).click();
   }
