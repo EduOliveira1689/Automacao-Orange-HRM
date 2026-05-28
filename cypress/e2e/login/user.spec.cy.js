@@ -3,7 +3,11 @@ import LoginPage from "../../pages/loginPage";
 
 const loginPage = new LoginPage();
 
-describe("Orange HRM Tests", () => {
+afterEach(() => {
+  cy.wait(3000);
+});
+
+describe("Login Tests", () => {
   it("Login com credenciais validas", () => {
     loginPage.accessLoginPage();
     loginPage.loginWithUser(

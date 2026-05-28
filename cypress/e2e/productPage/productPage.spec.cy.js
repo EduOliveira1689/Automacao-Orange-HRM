@@ -5,7 +5,7 @@ import ProductPage from "../../pages/productPage";
 const loginPage = new LoginPage();
 const productPage = new ProductPage();
 
-describe("Product Tests", () => {
+describe("Products Page Tests", () => {
   beforeEach(() => {
     loginPage.accessLoginPage();
 
@@ -15,6 +15,10 @@ describe("Product Tests", () => {
     );
 
     loginPage.validateValidAccess();
+  });
+
+  afterEach(() => {
+    cy.wait(3000);
   });
 
   it("Adicionar item no carrinho", () => {

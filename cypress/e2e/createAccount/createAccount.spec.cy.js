@@ -3,7 +3,11 @@ import candidateData from "../../fixtures/users/createUserData.json";
 
 const createAccountPage = new CreateAccountPage();
 
-describe("Automation Exercise Tests", () => {
+afterEach(() => {
+  cy.wait(3000);
+});
+
+describe("Create Account Tests", () => {
   it("Criar nova conta de usuário", () => {
     createAccountPage.accessSignupPage();
     createAccountPage.fillSignupForm();
