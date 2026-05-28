@@ -1,19 +1,16 @@
 class LoginPage {
   selectorsList() {
     const selectors = {
-      usernameField: "[name='username']",
-      passwordField: "[name='password']",
-      loginButton: "[type='submit']",
-      wrongCredentialAlert: "[role='alert']",
-      sectionTitleTopBar: ".oxd-topbar-header-breadcrumb-module",
-      dashboardGrid: ".orangehrm-dashboard-grid",
+      usernameField: "[data-qa='login-email'][placeholder='Email Address']",
+      passwordField: "[data-qa='login-password']",
+      loginButton: "[data-qa='login-button']",
     };
 
     return selectors;
   }
 
   accessLoginPage() {
-    cy.visit("/auth/login");
+    cy.visit("/login");
   }
 
   loginWithUser(username, password) {
@@ -22,15 +19,22 @@ class LoginPage {
     cy.get(this.selectorsList().loginButton).click();
   }
 
+  submitLogin() {
+    cy.get(this.selectorsList().loginButton).click();
+  }
+
   validateValidAccess() {
-    cy.get(this.selectorsList().dashboardGrid).should("be.visible");
+    cy.contains("Logged in as").should("be.visible");
   }
 
   validateInvalidAccess() {
-    cy.get(this.selectorsList().wrongCredentialAlert).should(
-      "contain",
-      "Invalid credentials",
-    );
+    cy.contains("Your email or password is incorrect!").should("be.visible");
+  }
+
+  validateEmptyAccess() {
+    cy.get(this.selectorsList().usernameField).then(($input) => {
+      expect($input[0].validationMessage).to.contain("Preencha este campo.");
+    });
   }
 }
 

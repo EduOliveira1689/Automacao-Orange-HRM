@@ -1,204 +1,53 @@
-{
-  "candidates": [
-    {
-      "email": "lucas.silva01@gmail.com",
-      "contactNumber": "11987654321"
-    },
-    {
-      "email": "ana.costa02@gmail.com",
-      "contactNumber": "11987654322"
-    },
-    {
-      "email": "marcos.almeida03@gmail.com",
-      "contactNumber": "11987654323"
-    },
-    {
-      "email": "fernanda.rocha04@gmail.com",
-      "contactNumber": "11987654324"
-    },
-    {
-      "email": "pedro.santos05@gmail.com",
-      "contactNumber": "11987654325"
-    },
-    {
-      "email": "juliana.lima06@gmail.com",
-      "contactNumber": "11987654326"
-    },
-    {
-      "email": "rafael.mendes07@gmail.com",
-      "contactNumber": "11987654327"
-    },
-    {
-      "email": "carla.oliveira08@gmail.com",
-      "contactNumber": "11987654328"
-    },
-    {
-      "email": "bruno.pereira09@gmail.com",
-      "contactNumber": "11987654329"
-    },
-    {
-      "email": "patricia.gomes10@gmail.com",
-      "contactNumber": "11987654330"
-    },
-    {
-      "email": "leonardo.ribeiro11@gmail.com",
-      "contactNumber": "11987654331"
-    },
-    {
-      "email": "camila.martins12@gmail.com",
-      "contactNumber": "11987654332"
-    },
-    {
-      "email": "gustavo.barros13@gmail.com",
-      "contactNumber": "11987654333"
-    },
-    {
-      "email": "amanda.teixeira14@gmail.com",
-      "contactNumber": "11987654334"
-    },
-    {
-      "email": "vinicius.ferreira15@gmail.com",
-      "contactNumber": "11987654335"
-    },
-    {
-      "email": "renata.cardoso16@gmail.com",
-      "contactNumber": "11987654336"
-    },
-    {
-      "email": "thiago.araujo17@gmail.com",
-      "contactNumber": "11987654337"
-    },
-    {
-      "email": "beatriz.nunes18@gmail.com",
-      "contactNumber": "11987654338"
-    },
-    {
-      "email": "felipe.moreira19@gmail.com",
-      "contactNumber": "11987654339"
-    },
-    {
-      "email": "aline.melo20@gmail.com",
-      "contactNumber": "11987654340"
-    },
-    {
-      "email": "rodrigo.castro21@gmail.com",
-      "contactNumber": "11987654341"
-    },
-    {
-      "email": "leticia.freitas22@gmail.com",
-      "contactNumber": "11987654342"
-    },
-    {
-      "email": "diego.ramos23@gmail.com",
-      "contactNumber": "11987654343"
-    },
-    {
-      "email": "tatiane.dias24@gmail.com",
-      "contactNumber": "11987654344"
-    },
-    {
-      "email": "eduardo.barbosa25@gmail.com",
-      "contactNumber": "11987654345"
-    },
-    {
-      "email": "priscila.alves26@gmail.com",
-      "contactNumber": "11987654346"
-    },
-    {
-      "email": "henrique.pinto27@gmail.com",
-      "contactNumber": "11987654347"
-    },
-    {
-      "email": "daniela.campos28@gmail.com",
-      "contactNumber": "11987654348"
-    },
-    {
-      "email": "caio.moura29@gmail.com",
-      "contactNumber": "11987654349"
-    },
-    {
-      "email": "vanessa.rezende30@gmail.com",
-      "contactNumber": "11987654350"
-    },
-    {
-      "email": "matheus.duarte31@gmail.com",
-      "contactNumber": "11987654351"
-    },
-    {
-      "email": "gabriela.fonseca32@gmail.com",
-      "contactNumber": "11987654352"
-    },
-    {
-      "email": "anderson.vieira33@gmail.com",
-      "contactNumber": "11987654353"
-    },
-    {
-      "email": "larissa.correia34@gmail.com",
-      "contactNumber": "11987654354"
-    },
-    {
-      "email": "ricardo.machado35@gmail.com",
-      "contactNumber": "11987654355"
-    },
-    {
-      "email": "monica.peixoto36@gmail.com",
-      "contactNumber": "11987654356"
-    },
-    {
-      "email": "alexandre.tavares37@gmail.com",
-      "contactNumber": "11987654357"
-    },
-    {
-      "email": "sabrina.farias38@gmail.com",
-      "contactNumber": "11987654358"
-    },
-    {
-      "email": "jorge.azevedo39@gmail.com",
-      "contactNumber": "11987654359"
-    },
-    {
-      "email": "paula.cunha40@gmail.com",
-      "contactNumber": "11987654360"
-    },
-    {
-      "email": "fabricio.neves41@gmail.com",
-      "contactNumber": "11987654361"
-    },
-    {
-      "email": "simone.brito42@gmail.com",
-      "contactNumber": "11987654362"
-    },
-    {
-      "email": "mauricio.leal43@gmail.com",
-      "contactNumber": "11987654363"
-    },
-    {
-      "email": "clarice.magalhaes44@gmail.com",
-      "contactNumber": "11987654364"
-    },
-    {
-      "email": "sergio.cavalcante45@gmail.com",
-      "contactNumber": "11987654365"
-    },
-    {
-      "email": "elisangela.porto46@gmail.com",
-      "contactNumber": "11987654366"
-    },
-    {
-      "email": "danilo.batista47@gmail.com",
-      "contactNumber": "11987654367"
-    },
-    {
-      "email": "raquel.miranda48@gmail.com",
-      "contactNumber": "11987654368"
-    },
-    {
-      "email": "wesley.antunes49@gmail.com",
-      "contactNumber": "11987654369"
-    },
-    {
-      "email": "bianca.sales50@gmail.com",
-      "contactNumber": "11987654370"
-    }
-  ]
-}
+[
+  {
+    "title": "Mr",
+    "name": "Eduardo Oliveira",
+    "email": "eduardo.qa01@teste.com",
+    "password": "Admin@123",
+    "day": "4",
+    "month": "February",
+    "year": "1994",
+    "firstName": "Leandro",
+    "lastName": "Oliveira",
+    "address": "Rua das Flores, 123",
+    "country": "India",
+    "state": "São Paulo",
+    "city": "São Paulo",
+    "zipcode": "16300-000",
+    "mobileNumber": "11999999999"
+  },
+  {
+    "title": "Mrs",
+    "name": "Jessica Oliveira",
+    "email": "jessica.qa02@teste.com",
+    "password": "QaTest@456",
+    "day": "15",
+    "month": "June",
+    "year": "1995",
+    "firstName": "Jessica",
+    "lastName": "Oliveira",
+    "address": "Av. Brasil, 456",
+    "country": "India",
+    "state": "Rio de Janeiro",
+    "city": "Rio de Janeiro",
+    "zipcode": "22000-000",
+    "mobileNumber": "21988888888"
+  },
+  {
+    "title": "Mr",
+    "name": "Carlos Santos",
+    "email": "carlos.qa03@teste.com",
+    "password": "Teste@789",
+    "day": "22",
+    "month": "September",
+    "year": "1990",
+    "firstName": "Carlos",
+    "lastName": "Santos",
+    "address": "Rua Central, 789",
+    "country": "India",
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "zipcode": "30100-000",
+    "mobileNumber": "31977777777"
+  }
+]

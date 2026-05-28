@@ -21,4 +21,9 @@ describe("Orange HRM Tests", () => {
     );
     loginPage.validateInvalidAccess();
   });
+  it("Login com campos em branco", () => {
+    loginPage.accessLoginPage();
+    loginPage.submitLogin();
+    loginPage.validateEmptyAccess();
+  });
 });
